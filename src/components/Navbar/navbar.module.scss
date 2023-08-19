@@ -1,0 +1,58 @@
+.navbar {
+  position: fixed;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  & > .logo {
+    & > svg {
+      height: calc(75px - 1rem);
+      cursor: pointer;
+    }
+  }
+
+  & > .sectionOptions {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    color: #69306d;
+    font-size: 1rem;
+
+    & > span {
+      cursor: pointer;
+      padding: 7px 0;
+      border-bottom: 2px solid transparent;
+      //   transition: all linear 0.2s;
+
+      &:hover {
+        border-bottom: 2px solid #69306d;
+      }
+    }
+
+    & > .selectedSection {
+      font-weight: 550;
+    }
+  }
+
+  & > .hireButton {
+    background: white;
+    border-radius: 16px;
+    color: var(--accent);
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border: 1.5px solid white;
+    transition: all linear 0.4s;
+
+    &:hover {
+      color: white;
+      background: transparent;
+    }
+  }
+}
