@@ -1,0 +1,47 @@
+.about {
+  padding: 5rem 0;
+  width: 100%;
+  background: var(--pale-pink);
+  overflow-x: hidden;
+
+  & > .aboutContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+
+    & > .leftContainer {
+      width: 30%;
+      font-size: 1.5rem;
+      font-weight: 550;
+      position: relative;
+
+      & > .content {
+        position: relative;
+        z-index: 1;
+        line-height: 1.4;
+        padding: 3rem 0;
+        padding-left: 1rem;
+        
+        & > :nth-child(-n + 3) {
+          color: var(--accent);
+        }
+      }
+
+      & > .whiteCover {
+        position: absolute;
+        inset: 0;
+        left: -500%;
+        background: white;
+        border-radius: 0 300px 300px 0;
+      }
+    }
+
+    & > .rightContainer {
+      width: 70%;
+      border: 1px solid red;
+    }
+  }
+}
