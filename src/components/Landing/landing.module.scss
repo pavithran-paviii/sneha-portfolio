@@ -49,11 +49,26 @@
         border: 1px solid var(--accent);
         border-radius: 16px;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       & > :nth-child(1) {
-        color: white;
         background: var(--accent);
+        border: 1px solid var(--accent);
+        color: white;
+        cursor: pointer;
+        width: max-content;
+        padding: 0.6rem 1.5rem;
+        border-radius: 16px;
+        font-size: 0.8rem;
+        transition: all linear 0.3s;
+
+        &:hover {
+          color: var(--accent);
+          background: transparent;
+        }
       }
     }
   }

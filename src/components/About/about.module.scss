@@ -9,8 +9,8 @@
     margin: 0 auto;
     height: 100%;
     display: flex;
-    gap: 1.25rem;
-    justify-content: center;
+    gap: 3rem;
+    justify-content: space-between;
 
     & > .leftContainer {
       width: 30%;
@@ -24,7 +24,7 @@
         line-height: 1.4;
         padding: 3rem 0;
         padding-left: 1rem;
-        
+
         & > :nth-child(-n + 3) {
           color: var(--accent);
         }
@@ -33,7 +33,7 @@
       & > .whiteCover {
         position: absolute;
         inset: 0;
-        left: -500%;
+        left: -150%;
         background: white;
         border-radius: 0 300px 300px 0;
       }
@@ -41,7 +41,41 @@
 
     & > .rightContainer {
       width: 70%;
-      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 1rem;
+
+      & > .title {
+        font-size: 1.5rem;
+        font-weight: 550;
+      }
+
+      & > .desc {
+        font-size: 0.8rem;
+        line-height: 1.5;
+
+        & > span {
+          font-weight: 600;
+        }
+      }
+
+      & > .btn {
+        background: var(--accent);
+        border: 1px solid var(--accent);
+        color: white;
+        cursor: pointer;
+        width: max-content;
+        padding: 0.6rem 1.5rem;
+        border-radius: 16px;
+        font-size: 0.8rem;
+        transition: all linear 0.3s;
+
+        &:hover {
+          color: var(--accent);
+          background: transparent;
+        }
+      }
     }
   }
 }
