@@ -60,7 +60,7 @@ const Projects = () => {
   };
 
   return (
-    <div className={classNames.projects}>
+    <div className={classNames.projects} id="projects">
       <div className={classNames.title}>
         Designs Crafted with Passion: Dive into My World of Design Collections
       </div>

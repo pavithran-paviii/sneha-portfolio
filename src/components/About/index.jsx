@@ -3,7 +3,7 @@ import classNames from "./about.module.scss";
 
 const About = () => {
   return (
-    <div className={classNames.about}>
+    <div className={classNames.about} id="about">
       <div className={classNames.aboutContainer}>
         <div className={classNames.leftContainer}>
           <div className={classNames.content}>

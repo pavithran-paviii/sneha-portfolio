@@ -12,33 +12,38 @@ const Navbar = () => {
         <LogoPath />
       </div>
       <div className={classNames.sectionOptions}>
-        <span
+        <a
+          href="/#home"
           className={selectedSection == "Home" && classNames.selectedSection}
         >
           Home
-        </span>
-        <span
+        </a>
+        <a
+          href="/#about"
           className={selectedSection == "About" && classNames.selectedSection}
         >
           About
-        </span>
-        <span
+        </a>
+        <a
+          href="/#projects"
           className={
             selectedSection == "Projects" && classNames.selectedSection
           }
         >
           Projects
-        </span>
-        <span
+        </a>
+        <a
+          href="/#gallery"
           className={selectedSection == "Gallery" && classNames.selectedSection}
         >
           Gallery
-        </span>
-        <span
+        </a>
+        <a
+          href="/#contact"
           className={selectedSection == "Contact" && classNames.selectedSection}
         >
           Contact
-        </span>
+        </a>
       </div>
       <div className={classNames.hireButton}>Hire Me</div>
     </div>

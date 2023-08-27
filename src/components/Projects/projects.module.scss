@@ -1,6 +1,5 @@
 .projects {
   width: 100%;
-  border: 1px solid red;
   position: relative;
   height: 100vh;
   max-height: 750px;
@@ -11,7 +10,7 @@
     width: 100%;
     inset: 0;
     bottom: 35%;
-    background: #69306d;
+    background: var(--primary-color);
     z-index: -1;
   }
 
@@ -70,7 +69,7 @@
         & > .type {
           font-size: 0.8rem;
           font-weight: 450;
-          color: #69306d;
+          color: var(--primary-color);
         }
 
         & > .viewBtn {
@@ -118,9 +117,38 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #69306d;
+      background: var(--primary-color);
       color: white;
-      border: 1px solid #69306d;
+      border: 1px solid var(--primary-color);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    & > .allProjects {
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      max-height: 400px;
+
+      & > .eachProject {
+        flex-direction: column;
+        text-align: center;
+
+        & > .content {
+          align-items: center;
+        }
+
+        & > img {
+          width: 100%;
+          border-radius: 32px;
+        }
+      }
+    }
+
+    & > .navigationButtons {
+      display: none;
     }
   }
 }

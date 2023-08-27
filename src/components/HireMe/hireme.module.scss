@@ -1,6 +1,6 @@
-.grabResume {
+.hireMe {
   width: 100%;
-  padding: 3rem;
+  padding: 6rem;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -52,5 +52,26 @@
     z-index: -1;
     max-height: 70%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hireMe {
+    padding: 3rem 1rem;
+
+    & > .container {
+      & > .title {
+        width: 100%;
+      }
+
+      & > .galleryGrid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+
+        & > img {
+          width: 100%;
+        }
+      }
+    }
   }
 }

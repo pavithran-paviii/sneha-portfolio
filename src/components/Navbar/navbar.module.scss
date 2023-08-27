@@ -22,17 +22,18 @@
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    color: #69306d;
-    font-size: 0.9rem;
+    color: var(--primary-color);
 
-    & > span {
+    & > a {
       cursor: pointer;
       padding: 7px 0;
+      text-decoration: none;
+      color: inherit;
       border-bottom: 2px solid transparent;
       //   transition: all linear 0.2s;
 
       &:hover {
-        border-bottom: 2px solid #69306d;
+        border-bottom: 2px solid var(--primary-color);
       }
     }
 
@@ -54,6 +55,16 @@
     &:hover {
       color: white;
       background: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 1.5rem 0.6rem;
+
+    & > .sectionOptions {
+      display: none;
     }
   }
 }

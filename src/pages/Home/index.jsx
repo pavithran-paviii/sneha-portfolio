@@ -6,6 +6,10 @@ import Navbar from "../../components/Navbar";
 import About from "../../components/About";
 import GrabResume from "../../components/GrabResume";
 import Projects from "../../components/Projects";
+import Vision from "../../components/Vision";
+import Gallery from "../../components/Gallery";
+import HireMe from "../../components/HireMe";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +19,10 @@ const Home = () => {
       <About />
       <GrabResume />
       <Projects />
+      <Vision />
+      <Gallery />
+      <HireMe />
+      <Footer />
     </div>
   );
 };

@@ -79,3 +79,26 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 0;
+    & > .aboutContainer {
+      flex-direction: column;
+      padding: 0 1rem;
+
+      & > div {
+        width: 100% !important;
+      }
+
+      & > .leftContainer {
+        text-align: center;
+      }
+
+      & > .rightContainer {
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+  }
+}
