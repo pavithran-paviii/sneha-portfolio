@@ -15,12 +15,14 @@ const Navbar = () => {
         <a
           href="/#home"
           className={selectedSection === "Home" && classNames.selectedSection}
+          onClick={() => setSelectedSection("Home")}
         >
           Home
         </a>
         <a
           href="/#about"
           className={selectedSection === "About" && classNames.selectedSection}
+          onClick={() => setSelectedSection("About")}
         >
           About
         </a>
@@ -29,18 +31,25 @@ const Navbar = () => {
           className={
             selectedSection === "Projects" && classNames.selectedSection
           }
+          onClick={() => setSelectedSection("Projects")}
         >
           Projects
         </a>
         <a
           href="/#gallery"
-          className={selectedSection === "Gallery" && classNames.selectedSection}
+          className={
+            selectedSection === "Gallery" && classNames.selectedSection
+          }
+          onClick={() => setSelectedSection("Gallery")}
         >
           Gallery
         </a>
         <a
           href="/#contact"
-          className={selectedSection === "Contact" && classNames.selectedSection}
+          className={
+            selectedSection === "Contact" && classNames.selectedSection
+          }
+          onClick={() => setSelectedSection("Contact")}
         >
           Contact
         </a>

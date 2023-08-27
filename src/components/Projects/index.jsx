@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import classNames from "./projects.module.scss";
 
 //assets
@@ -40,7 +40,7 @@ const Projects = () => {
       const eachProjectWidth = container.clientWidth;
       container.scrollTo({
         left:
-          type == "prev"
+          type === "prev"
             ? eachProjectWidth * index
             : eachProjectWidth * index + 100,
         behavior: "smooth",
