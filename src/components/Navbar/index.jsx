@@ -14,33 +14,33 @@ const Navbar = () => {
       <div className={classNames.sectionOptions}>
         <a
           href="/#home"
-          className={selectedSection == "Home" && classNames.selectedSection}
+          className={selectedSection === "Home" && classNames.selectedSection}
         >
           Home
         </a>
         <a
           href="/#about"
-          className={selectedSection == "About" && classNames.selectedSection}
+          className={selectedSection === "About" && classNames.selectedSection}
         >
           About
         </a>
         <a
           href="/#projects"
           className={
-            selectedSection == "Projects" && classNames.selectedSection
+            selectedSection === "Projects" && classNames.selectedSection
           }
         >
           Projects
         </a>
         <a
           href="/#gallery"
-          className={selectedSection == "Gallery" && classNames.selectedSection}
+          className={selectedSection === "Gallery" && classNames.selectedSection}
         >
           Gallery
         </a>
         <a
           href="/#contact"
-          className={selectedSection == "Contact" && classNames.selectedSection}
+          className={selectedSection === "Contact" && classNames.selectedSection}
         >
           Contact
         </a>
