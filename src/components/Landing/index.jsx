@@ -16,7 +16,16 @@ const Landing = () => {
           be prepared to get amazed
         </div>
         <div className={classNames.buttonsContainer}>
-          <div>Resume</div>
+          <div
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1Zql2NZWBsDr5pGdp7MLsNvJbHfLCu0Nk/view?usp=drive_link",
+                "_blank"
+              )
+            }
+          >
+            Resume
+          </div>
           <div>View Projects</div>
         </div>
       </div>

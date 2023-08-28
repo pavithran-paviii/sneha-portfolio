@@ -8,9 +8,30 @@ const GrabResume = () => {
     <div className={classNames.grabResume}>
       <div className={classNames.container}>
         <div className={classNames.title}>
-          Get to Know Me Better: Grab My <span>Resume</span> Now
+          Get to Know Me Better: Grab My{" "}
+          <span
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1Zql2NZWBsDr5pGdp7MLsNvJbHfLCu0Nk/view?usp=drive_link",
+                "_blank"
+              )
+            }
+          >
+            Resume
+          </span>{" "}
+          Now
         </div>
-        <div className={classNames.btn}>Download my resume</div>
+        <div
+          className={classNames.btn}
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1Zql2NZWBsDr5pGdp7MLsNvJbHfLCu0Nk/view?usp=drive_link",
+              "_blank"
+            )
+          }
+        >
+          Download my resume
+        </div>
       </div>
 
       <img src={backgroundImage} alt="backgroundImage" />

@@ -14,13 +14,38 @@ const Footer = () => {
           Diverse Collection of Works
         </div>
         <div className={classNames.socialHandles}>
-          <BsLinkedin />
-          <FaBehanceSquare />
-          <FaTwitterSquare />
-          <BsInstagram />
-          <BsMedium />
+          <BsLinkedin
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/sneha14m/", "_blank")
+            }
+          />
+          <FaBehanceSquare
+            onClick={() =>
+              window.open("https://www.behance.net/sneha_m14", "_blank")
+            }
+          />
+          <FaTwitterSquare
+            onClick={() =>
+              window.open("https://twitter.com/Sneha_m_ux", "_blank")
+            }
+          />
+          <BsInstagram
+            onClick={() =>
+              window.open("https://www.instagram.com/sne_deshine/", "_blank")
+            }
+          />
+          <BsMedium
+            onClick={() =>
+              window.open("https://medium.com/@snehaMdesigner", "_blank")
+            }
+          />
         </div>
-        <div className={classNames.mail}>
+        <div
+          className={classNames.mail}
+          onClick={() =>
+            window?.open("mailto:snehauxdesigner@gmail.com", "_blank")
+          }
+        >
           <BiLogoGmail />
           snehauxdesigner@gmail.com
         </div>
